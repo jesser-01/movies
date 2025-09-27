@@ -1,0 +1,88 @@
+#movie{
+    width: 250px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    position: relative;
+}
+h3,p{
+    padding: 0px 0 0 10px;
+}
+img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+#movies{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+nav{
+    padding-bottom: 30px;
+    display: flex;
+}
+#li1,#li2,#li4{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    /* align-items: center; */
+
+}
+#search{
+    border-radius: 25px;
+    border-style:none ;
+    height: 40px;
+    width: 200px;
+    background-color: white;
+}
+#b{
+    position: relative;
+}
+button{
+    background-color: white;
+    height:100%;
+    width: 30px;
+    border-radius: 25px;
+    position: absolute;
+    right: 5px;
+    border-style:none ;
+    
+}
+i{
+    position: relative;
+    top: 3px;
+    right: 5px;
+    cursor: pointer;
+    
+}
+#movie i{
+    position: absolute;
+    color: rgb(255, 0, 128);
+    font-size: 20px;
+}
+body{
+    background-color: blueviolet;
+}
+#li4>i{
+    top: 2px;
+    right: 2px;
+    font-size: 18px;
+}
+p i{
+    color: black;
+}
+#li4 p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
