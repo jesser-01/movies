@@ -151,7 +151,7 @@ for (let j = 0; j < movieslist.length; j++) {
 // console.log(cat)
 function cretcat() {
   for (let i = 0; i < cat.length; i++) {
-    document.getElementById("li4").innerHTML+=`<div class="catdivs" id="cat${i}"><p>${cat[i]}<i class="fa-regular fa-square" id="i${i}"></i></p></div>`
+    document.getElementById("li4m").innerHTML+=`<div class="catdivs" id="cat${i}"><p>${cat[i]}<i class="fa-regular fa-square" id="i${i}"></i></p></div>`
   }
   
 }
@@ -182,6 +182,19 @@ for (let i = 0; i < catdivs.length; i++) {
         affmovie(j)
       }
     }
+  }}
+  var t=0
+  document.getElementById("li4").onclick=function () {
+  if (t==0) {
+    
+    document.getElementById("li4m").style.opacity=1
+    document.getElementById("li4m").style.transform="translateY(0)";
+  
+  t=1}
+  else{
+    document.getElementById("li4m").style.opacity=0
+    document.getElementById("li4m").style.transform="translateY(50px)";
+    t=0
   }}
   
   

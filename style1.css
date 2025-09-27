@@ -21,6 +21,7 @@ img{
 nav{
     padding-bottom: 30px;
     display: flex;
+    justify-content: space-between;
 }
 #li1,#li2,#li4{
     font-size: 18px;
@@ -33,9 +34,6 @@ ul{
     gap: 20px;
     align-items: center;
     list-style: none;
-    width: 100%;
-    /* align-items: center; */
-
 }
 #search{
     border-radius: 25px;
@@ -85,4 +83,23 @@ p i{
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+}
+#li4m{
+    opacity: 0;
+    position: absolute;
+    top: 40px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.874);
+    border-radius: 10px;
+    width: 160px;
+    transform: translateY(50px);
+    transition: all 0.5s;
+}
+#li4{
+    position: relative;
+}
+nav img{
+    height: 80px;
+    width: 80px;
+    border-radius: 0px;
 }
