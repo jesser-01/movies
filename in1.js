@@ -184,14 +184,15 @@ for (let i = 0; i < catdivs.length; i++) {
     }
   }}
   var t=0
-  document.getElementById("li4").onclick=function () {
+  document.getElementById("li4tx").onclick=function () {
   if (t==0) {
-    
+    document.getElementById("li4m").style.display="block"
     document.getElementById("li4m").style.opacity=1
     document.getElementById("li4m").style.transform="translateY(0)";
   
   t=1}
   else{
+    document.getElementById("li4m").style.display="none"
     document.getElementById("li4m").style.opacity=0
     document.getElementById("li4m").style.transform="translateY(50px)";
     t=0
